@@ -7,6 +7,6 @@ message = "commit a intro about a function"
 all:
 	@echo "Use 'make message' if you fail to provide a message."
 	git add .
-	git commit -m $(message)
+	git commit -m "$(message)"
 	git push origin main
 
