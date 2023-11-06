@@ -1,2 +1,2 @@
-# raycastNote
-some note for raycast python script
+# FunctionNote
+some note for python script
