@@ -1,0 +1,18 @@
+
+####################################################
+
+>>> from scipy.integrate import quad
+>>> def f(x):
+...     return x
+... 
+>>> result = quad(f,1,2) #返回 积分结果和误差,result,error = quad(f,a,b)
+>>> result
+(1.5, 1.6653345369377348e-14)
+>>> type(result)
+<class 'tuple'>
+>>> 
+
+
+
+####################################################
+

@@ -1,0 +1,24 @@
+
+####################################################
+
+>>>from numpy import array
+
+Help on built-in function array in module numpy:
+
+array(...)
+    array(object, dtype=None, *, copy=True, order='K', subok=False, ndmin=0,
+          like=None)
+
+###
+array可以直接做函数运算，f(array)等价于array([f(v) for v in array])
+
+example:
+    random_array = zeros((2,nTrails))
+    random_array[0,:] = uniform.rvs(loc = a, scale = b - a, size = nTrails)
+    random_array[1,:] = uniform.rvs(loc = 0, scale = ceiling_value , size = nTrails)
+    under_f = f(random_array[0, :]) > random_array[1, :]  # 直接产生bool array
+
+###
+
+####################################################
+
