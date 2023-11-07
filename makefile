@@ -1,4 +1,4 @@
-message = "commit a intro about a function"
+message = commit a intro about a function
 
 .PHONY: message
 
