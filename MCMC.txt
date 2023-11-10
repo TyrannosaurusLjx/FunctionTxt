@@ -4,6 +4,9 @@
 
 MCMC采样参考链接：
 
+MCMC就是拒绝接受法的变种
+
+
 https://zhuanlan.zhihu.com/p/30003899
 
 https://www.cnblogs.com/pinard/p/6638955.html
