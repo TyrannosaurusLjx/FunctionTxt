@@ -13,4 +13,5 @@ if __name__ == '__main__':
         print("请提供一个文件名作为参数。")  
     else:  
         filename = sys.argv[1]  
+        filename = "./FunctionTxt/"+filename
         read_file_content(filename)  
