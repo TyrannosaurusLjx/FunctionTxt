@@ -4,8 +4,9 @@ import os
 
 print("\ntype SPACE to represent FORGOTTEN else ENTER . other to quit\n")
 
-n = input("type which list do you want to review, enter to choose randomly \n")
+n = input("type which list you want to review, enter to choose randomly \n")
 
+wrong  = []
 
 max_k = 1
 
@@ -47,7 +48,8 @@ with open (filename, "r") as file:
         print(chinese)
         print()
         total += 1
-        if answer == " ":
+        if answer == " ":      
+            wrong.append(english)
             error += 1
         elif answer == "\n":
             right += 1
@@ -56,7 +58,10 @@ with open (filename, "r") as file:
             break
         
     print("A total of {} words were tested, of which {} were correct, {} were wrong and the correct rate was {:.2f}%".format(total,right,error,100*right/total))
-            
+    print("wrong words list")
+    for item in wrong:
+        print(item," ",content_dic[item])
+    
 
         
         
