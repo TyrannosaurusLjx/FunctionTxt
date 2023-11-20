@@ -18,10 +18,10 @@ for file_name in os.listdir("./wordlist"):
             max_k = k 
 
 
-if not n.isdigit():
-    filename = "./wordlist/wordlist{}.txt".format(random.choice(range(1,max_k+1)))
-else:
+if n.isdigit() and int(n) <= max_k:
     filename = "./wordlist/wordlist{}.txt".format(int(n))
+else: 
+    filename = "./wordlist/wordlist{}.txt".format(random.choice(range(1,max_k+1)))
 
 right = 0
 error = 0
